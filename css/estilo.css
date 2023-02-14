@@ -1,0 +1,336 @@
+/*sacar los espacio predeterminados*/
+*{
+ margin: 0;
+padding: 0;
+box-sizing: border-box;}
+
+html{
+    font-size: 62.5%;
+}
+
+/*Google Fonts*/
+
+
+
+    
+/*cabecera (header) letras , posicion , logo , titulo ,enlaces internos*/
+
+header {
+display: inline;
+font-size:1.2rem;
+width: 1200px;
+height: 70px;
+background-color: red;
+}
+.div_cabecera{
+    height: 70px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.logo img 
+{  height: 50px;
+   float: left;
+   align-items: center;}
+h1{
+   margin-top: 10px ;
+   font-size: 2.7rem;
+}
+a{ 
+text-decoration: none;
+color: white;
+font-weight: bold;
+
+}
+
+.Logo_y_h1{
+    width: 300px;
+    background-color: black;
+    height: 60px;
+    margin-top: 8px;
+    margin-left: 2px;
+    float: left;
+}
+.listas_cabecera{
+    
+    width: 555px;
+    background-color: black;
+    height: 60px;
+    align-items: center;
+    
+}
+
+    
+    
+
+ul li{
+   display: inline-block;
+   margin-right: 15px;
+   margin-left: 15px;
+   margin-top: 20px;
+}
+li{
+    justify-content: flex-end;
+    font-size: 2rem;
+}
+
+/*Aca va la seccion Carrusel */
+
+
+.sec_carrousel{
+    height: 50px;
+    width: 100%;
+    margin-top: 0px;
+    background-color:blueviolet ;
+}
+.Mas_relevantes{
+text-align: center;
+width: 100%;
+height: 50px;
+background-color: beige;
+padding: 5px;
+
+}
+
+h2{
+    margin-top: 0px;
+    font-size: 3rem;
+}
+/* accion de color al pasar el mouse sobre los articulos "contacto", "campera",etc*/
+nav :hover{
+    color: cadetblue;
+}
+/* aca es el fondo del div card*/
+.articulos_relevantes {
+    background-color: red;
+    width: 100%;
+    height: 700px;
+    margin-top: 0px;
+    display: inline ;/* esto mantiene mis cards el en centro*/
+    justify-content:center ;
+    flex-direction: row;
+   
+    
+}
+
+.articulos_relevantes2 {
+    background-color: white;
+    width: 100%;
+    height: 700px;
+    margin-top: 0px;
+    display: inline ;
+    /* esto mantiene mis cards el en centro*/
+    justify-content:space-evenly ;
+}
+/* aca van los estilos de las cards*/
+.container{
+    display: flex;
+    justify-content: center;
+    
+    height: 600px;
+}
+.card{
+    
+    width: 300px;
+    height: 550px;
+    margin-top: 30px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: brown; 
+    
+    margin-left: 13px;
+    margin-right: 13px;
+    border-color: beige 
+    
+}
+.imagen_card{
+   width: 100%;
+   height: 250px;}
+
+   /* h3 De Las Card Index*/
+.titulo_card{
+    font-size: 2rem;
+}
+/*parrafo de las card index */
+.card_descripcion{ 
+    
+    font-size: 2rem;}
+
+.imagen__card{
+        object-fit: cover;
+        width:100%;
+        height:100%;
+}
+/*div donde van las descripciones del producto de las card*/
+.descripcion_card{
+    height: 300px;
+    width: 100% ;
+    background-color:  rgb(212, 202, 202);
+    text-align: center;
+    overflow: hidden;
+    transition: 2s;
+}
+.descripcion_card:hover {
+background-color: beige;
+}
+
+/*texto de las card*/
+.titulo_card{
+    font-size: 3rem;
+}
+.card_texto{font-size: 2rem;
+font-weight: 500;}
+.campeones{
+    font-size: 2.1rem;
+    font-weight: bold;
+   
+}
+
+/* Todo lo del Footer*/
+footer{
+    width: 100%;
+    float: left;
+    text-align:center ;
+    display: inline
+}
+
+.footer_class{
+    background-color: black;
+    margin-top: 0px;
+    font-size: 2rem;
+    
+
+
+}
+
+
+/*pagina contacto Imporntante*/
+
+.contacto_y_mapa{
+    display: flex;
+    margin-top: 0px;
+    width: 100%;
+    height: 600px;
+    background-color: aqua;   
+    justify-content: center;
+}
+.Formulario{  
+    width: 600px;
+    height: 600px ;
+    background-color: beige;
+    text-align: center;
+    
+}
+.mapa{
+    width: 600px;
+    height: 600px;
+    background-color: blue;
+    
+}
+.titulo_contac{
+    font-size: 40px;
+}
+
+/*botines card*/
+
+.botines_section{
+
+width: 100vw;
+height: 1400px;
+background-color: white;
+margin-top: 0px;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+
+
+.botines_card{
+ 
+    width: 80vw;
+    height: 300px;
+    background-color: beige;
+    border-radius: 20px;
+    border: 1px black;
+    margin-top: 10px;
+   
+    
+
+}
+.botines_img{
+    background-color: blueviolet;
+    height: 300px;
+    width: 20vw;
+    float: left;
+    
+}
+
+.botines_descripcion{
+    
+    background-color: rgb(217, 217, 115);
+    height: 300px;
+    width: 80vw;
+    font-size: 2rem;
+    transition: all 1s;
+}
+.botines_descripcion:hover{
+    background-color: beige;
+}
+.img_botines {
+    width: 100%;
+    height: 100%;}
+
+
+
+
+/* TABLET  Responsive */
+@media screen and (min-width: 768px) and (max-width: 1023px)
+{
+
+    header{
+        background-color: aqua;
+        width: 100%;
+        margin-top: 0px;
+    }
+    .div_cabecera{
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 1023px;
+        height: 140px;      
+    }
+    .Logo_y_h1{
+        display: flex;
+          margin: auto; 
+          height: 80px;
+
+}
+
+    .listas_cabecera{
+        margin: auto;
+        height: 60px;
+}
+
+/* seccion de las card estilo tablet*/
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    height: 1250px;
+    min-width: 768px;
+    max-width: 1023;
+}
+.botines_section{
+    display: flex;
+    width: 100%;
+}
+
+/* card del index */
+.card{
+    width: 50vh;
+}
+
+
+}
