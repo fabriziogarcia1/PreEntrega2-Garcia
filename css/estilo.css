@@ -66,8 +66,8 @@ font-weight: bold;
 
 ul li{
    display: inline-block;
-   margin-right: 15px;
-   margin-left: 15px;
+   margin-right: 10px;
+   margin-left: 10px;
    margin-top: 20px;
 }
 li{
@@ -75,15 +75,22 @@ li{
     font-size: 2rem;
 }
 
-/*Aca va la seccion Carrusel */
-
-
+/*Aca va la seccion Carrusel 
 .sec_carrousel{
-    height: 50px;
-    width: 100%;
-    margin-top: 0px;
-    background-color:blueviolet ;
+    height: 500px;
+    
 }
+
+.carousel_index{
+    height: 500px;
+    width: 100%;
+    background-color: red;
+}
+.carousel__ejemplo{
+    width: 100%;
+    height: 500px;
+} */
+
 .Mas_relevantes{
 text-align: center;
 width: 100%;
@@ -138,11 +145,9 @@ nav :hover{
     border-radius: 6px;
     overflow: hidden;
     background-color: brown; 
-    
     margin-left: 13px;
     margin-right: 13px;
     border-color: beige 
-    
 }
 .imagen_card{
    width: 100%;
@@ -177,9 +182,9 @@ background-color: beige;
 
 /*texto de las card*/
 .titulo_card{
-    font-size: 3rem;
+    font-size: 2rem;
 }
-.card_texto{font-size: 2rem;
+.card_texto{font-size: 1.5rem;
 font-weight: 500;}
 .campeones{
     font-size: 2.1rem;
@@ -211,20 +216,20 @@ footer{
     display: flex;
     margin-top: 0px;
     width: 100%;
-    height: 600px;
-    background-color: aqua;   
+    height: 400px;
+    background-color: white;   
     justify-content: center;
 }
 .Formulario{  
-    width: 600px;
-    height: 600px ;
+    width: 800px;
+    height: 400px ;
     background-color: beige;
     text-align: center;
     
 }
 .mapa{
-    width: 600px;
-    height: 600px;
+    width: 800px;
+    height: 400px;
     background-color: blue;
     
 }
@@ -366,8 +371,9 @@ a:hover {
 
     header{
         background-color: aqua;
-        max-width: 1023px;
-        margin-top: 0px;
+        width: 100%;
+        margin-top: 0px ;
+    
         
     }
     .div_cabecera{
@@ -375,14 +381,15 @@ a:hover {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 1023px;
+       width: 100%;
         height: 140px;
         margin: auto;
           
     }
     .Logo_y_h1{
         display: flex;
-          margin: auto; 
+        width: 100%;
+         align-items: center;
           height: 80px;
           margin: auto;
           justify-content: center;
@@ -392,6 +399,7 @@ a:hover {
     .listas_cabecera{
         margin: auto;
         height: 60px;
+        justify-content: center;
 }
 
 /* seccion de las card estilo tablet*/
@@ -412,6 +420,88 @@ a:hover {
     width: 40%;
     
 }
+
+
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    header{
+        background-color: aqua;
+        width: 100%;
+        margin-top: 0px ;
+    
+        
+    }
+    .div_cabecera{
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       width: 100%;
+        height: 140px;
+        margin: auto;
+          
+    }
+    .Logo_y_h1{
+        display: flex;
+        width: 100%;
+         align-items: center;
+          height: 80px;
+          margin: auto;
+          justify-content: center;
+
+}
+
+    .listas_cabecera{
+        margin: auto;
+        height: 60px;
+        justify-content: center;
+}
+    .container{
+        height: 1700px;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        margin-top: 0px;
+        padding: 0px;
+    }
+    .articulos_relevantes{
+        height: 1700px;
+        width: 100%;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0px;
+        padding: 0px;
+    }
+    .articulos_relevantes2{
+        height: 1700px;
+        width: 100%;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0px;
+        padding: 0px;
+    }
+    .card {
+        width: 400px;
+        height: 400px;
+        margin-top: 10px;
+    }
+    .grid_footer_{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+    }
+    
+
+
+
+
+
+
+
+
+
 
 
 }
