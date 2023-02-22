@@ -16,126 +16,53 @@ html{
 /*cabecera (header) letras , posicion , logo , titulo ,enlaces internos*/
 
 header {
-display: inline;
 font-size:1.2rem;
-width: 1200px;
+display: grid;
+background-color: beige;
+width: 100%;
 height: 70px;
-background-color: red;
+
 }
-.div_cabecera{
+.logo{
+    float: left;
+    height: 70px;
+margin-left: 0px;}
+a{
+    text-decoration: none;
+    color: white;
+}
+.grid_header{
+    display: grid;
+    width: 100%;
     height: 70px;
     background-color: black;
-    display: flex;
-    justify-content: space-between;
-    
+    grid-template-columns: auto auto;
 }
-.logo img 
-{  height: 50px;
-   float: left;
-   align-items: center;}
-h1{
-   margin-top: 10px ;
-   font-size: 2.7rem;
-}
-a{ 
-text-decoration: none;
-color: white;
-font-weight: bold;
-
-}
-
-.Logo_y_h1{
-    width: 300px;
-    background-color: black;
-    height: 60px;
-    margin-top: 8px;
-    margin-left: 2px;
+.logo_h1{
     float: left;
 }
-.listas_cabecera{
-    
-    width: 555px;
-    background-color: black;
-    height: 60px;
-    align-items: center;
-    
-}
-
-    
-    
-
-ul li{
-   display: inline-block;
-   margin-right: 10px;
-   margin-left: 10px;
-   margin-top: 20px;
-}
-li{
-    justify-content: flex-end;
-    font-size: 2rem;
-}
-
-/*Aca va la seccion Carrusel 
-.sec_carrousel{
-    height: 500px;
-    
-}
-
-.carousel_index{
-    height: 500px;
-    width: 100%;
-    background-color: red;
-}
-.carousel__ejemplo{
-    width: 100%;
-    height: 500px;
-} */
-
-.Mas_relevantes{
-text-align: center;
-width: 100%;
-height: 50px;
-background-color: beige;
-padding: 5px;
-
-}
-
-h2{
-    margin-top: 0px;
-    font-size: 3rem;
-}
-/* accion de color al pasar el mouse sobre los articulos "contacto", "campera",etc*/
-nav :hover{
-    color: cadetblue;
-}
-/* aca es el fondo del div card*/
-.articulos_relevantes {
-    background-color: red;
-    width: 100%;
-    height: 700px;
-    margin-top: 0px;
-    display: inline ;/* esto mantiene mis cards el en centro*/
-    justify-content:center ;
-    flex-direction: row;
-   
-    
-}
-
-.articulos_relevantes2 {
-    background-color: white;
-    width: 100%;
-    height: 700px;
-    margin-top: 0px;
-    display: inline ;
-    /* esto mantiene mis cards el en centro*/
-    justify-content:space-evenly ;
-}
-/* aca van los estilos de las cards*/
-.container{
+.paginas_{
     display: flex;
+    justify-content: flex-end;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.line_70{
+line-height: 70px;
+margin-left: 10px;
+margin-right: 10px;
+}
+h1{float: left;
+line-height: 70px;}
+
+/*Index PAGINA DE CARDS CON GRID*/
+.section_con_cards{
+    display: grid;
+    height: 1800px;
+    width: 100vw;
+    background-color: red;
+    grid-template-columns: auto auto auto ;
     justify-content: center;
-    
-    height: 600px;
 }
 .card{
     
@@ -147,7 +74,16 @@ nav :hover{
     background-color: brown; 
     margin-left: 13px;
     margin-right: 13px;
-    border-color: beige 
+    border:2px solid black;
+    
+}
+h2{
+    margin-top: 0px;
+    font-size: 3rem;
+}
+/* accion de color al pasar el mouse sobre los articulos "contacto", "campera",etc*/
+nav :hover{
+    color: cadetblue;
 }
 .imagen_card{
    width: 100%;
@@ -191,24 +127,6 @@ font-weight: 500;}
     font-weight: bold;
    
 }
-
-/* Todo lo del Footer*/
-footer{
-    width: 100%;
-    float: left;
-    text-align:center ;
-    display: inline
-}
-
-.footer_class{
-    background-color: black;
-    margin-top: 0px;
-    font-size: 2rem;
-    
-
-
-}
-
 
 /*pagina contacto Imporntante*/
 
@@ -373,119 +291,65 @@ a:hover {
         background-color: aqua;
         width: 100%;
         margin-top: 0px ;
-    
-        
-    }
-    .div_cabecera{
-        background-color: rgb(0, 0, 0);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-       width: 100%;
         height: 140px;
-        margin: auto;
-          
+      
     }
-    .Logo_y_h1{
-        display: flex;
-        width: 100%;
-         align-items: center;
-          height: 80px;
-          margin: auto;
-          justify-content: center;
-
-}
-
-    .listas_cabecera{
+    .grid_header{
+        background-color: black;
+        height: 140px;
+        grid-template-columns: auto ;
+        grid-template-rows: auto auto ;
+        justify-content: center; 
+    }
+    .logo_h1{
         margin: auto;
-        height: 60px;
-        justify-content: center;
-}
-
-/* seccion de las card estilo tablet*/
-.container{
-    display: flex;
-    flex-wrap: wrap;
-    height: 1250px;
-    min-width: 768px;
-    max-width: 1023;
-}
-.botines_section{
-    display: flex;
-    width: 100%;
-}
-
-/* card del index */
-.card{
-    width: 40%;
-    
-}
-
+    }
+    .section_con_cards{
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto;
+        height: 3000px;
+    }
 
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 424px) and (max-width: 767px) {
+    body{
+        background-color: green;
+    }
     header{
-        background-color: aqua;
+        background-color: black;
         width: 100%;
+        height: 140px;
         margin-top: 0px ;
-    
+        display: grid;
+    }
+    .grid_header{
+        height: 70PX;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto;
+        background-color: black;
+
+    }
+    .logo_h1{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+    .paginas_{
+        display: flex;
+        justify-content: center;
+    }
+    .section_con_cards{
+        height: 5000px;
+        background-color: blue;
+        display: grid;
+        width: 100vw;
+        grid-template-columns: auto;
         
-    }
-    .div_cabecera{
-        background-color: rgb(0, 0, 0);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-       width: 100%;
-        height: 160px;
-        margin: auto;
-          
-    }
-    .Logo_y_h1{
-        display: flex;
-        width: 100%;
-         align-items: center;
-          height: 80px;
-          margin: auto;
-          justify-content: center;
-
-}
-
-    .listas_cabecera{
-        margin: auto;
-        height: 80px;
-        justify-content: center;
-}
-    .container{
-        height: 1700px;
-        display: flex;
-        flex-direction: column;
-        background-color: white;
-        margin-top: 0px;
-        padding: 0px;
-    }
-    .articulos_relevantes{
-        height: 1700px;
-        width: 100%;
-        background-color: white;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 0px;
-        padding: 0px;
-    }
-    .articulos_relevantes2{
-        height: 1700px;
-        width: 100%;
-        background-color: white;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 0px;
-        padding: 0px;
     }
     .card {
         width: 400px;
-        height: 400px;
+        height: 500px;
         margin-top: 10px;
     }
     .grid_footer_{
@@ -493,20 +357,12 @@ a:hover {
         grid-template-rows: auto auto auto;
     }
     .contacto_y_mapa{
+        width: 100vw;
         display: flex;
         flex-direction: column;
         margin-top:80px;
     }
-    
-
-
-
-
-
-
-
-
-
-
-
+    .Formulario{
+        width: 100vw;
+    }
 }
