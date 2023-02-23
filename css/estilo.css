@@ -10,135 +10,141 @@ html{
 
 /*Google Fonts*/
 
-/*boton de navabar */
-.box {
-    width: 140px;
-    height: 70px;
-    float: left;
-    transition: .5s linear;
-    position: relative;
-    display: block;
-    overflow: hidden;
-    padding: 0px;
-    text-align: center;
-    margin: 0px;
-    background: transparent;
-    text-transform: none;
-    font-weight: 700;
-    color: white;
-    font-size: 1.5em;
-  }
-  
-  .box:before {
-    position: absolute;
-    content: '';
-    left: 0;
-    bottom: 0;
-    height: 4px;
-    width: 100%;
-    border-bottom: 4px solid transparent;
-    border-left: 4px solid transparent;
-    box-sizing: border-box;
-    transform: translateX(100%);
-  }
-  
-  .box:after {
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    border-top: 4px solid transparent;
-    border-right: 4px solid transparent;
-    box-sizing: border-box;
-    transform: translateX(-100%);
-  }
-  
-  .box:hover {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-  }
-  
-  .box:hover:before {
-    border-color: #262626;
-    height: 100%;
-    transform: translateX(0);
-    transition: .3s transform linear, .3s height linear .3s;
-  }
-  
-  .box:hover:after {
-    border-color: #262626;
-    height: 100%;
-    transform: translateX(0);
-    transition: .3s transform linear, .3s height linear .5s;
-  }
-  
-  
-  button {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-    outline: none;
-    border: none;
-    background: transparent;
-  }
-    
+
 /*cabecera (header) letras , posicion , logo , titulo ,enlaces internos*/
 
 header {
 font-size:1.2rem;
+margin-top: 0px;
 display: grid;
 background-color: beige;
 width: 100%;
-height: 70px;
+height: 7rem;
 
+}
+header{
+    background-color: black;
+    width: 100%;
+    height: 100% ;
+    margin-top: 0px ;
+    display: grid;
 }
 .logo{
     float: left;
-    height: 70px;
+    height: 7rem;
 margin-left: 0px;}
+.logo_2{
+    height: 3rem;
+}
+button {
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: 1px solid rgb(61, 106, 255);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background: transparent;
+    color: #fff;
+    overflow: hidden;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+  }
+  
+  button:hover {
+    background: rgb(61, 106, 255);
+    box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+  
+  button:hover::before {
+    -webkit-animation: sh02 0.5s 0s linear;
+    -moz-animation: sh02 0.5s 0s linear;
+    animation: sh02 0.5s 0s linear;
+  }
+  
+  button::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+  }
+  
+  @keyframes sh02 {
+    from {
+      opacity: 0;
+      left: 0%;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+      left: 100%;
+    }
+  }
+  
+  button:active {
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: box-shadow 0.2s ease-in;
+    -moz-transition: box-shadow 0.2s ease-in;
+    transition: box-shadow 0.2s ease-in;
+  }
+  
 a{
     text-decoration: none;
     color: white;
 }
-.grid_header{
-    display: grid;
-    width: 100%;
-    height: 70px;
-    background-color: black;
-    grid-template-columns: auto auto;
-}
-.logo_h1{
-    float: left;
-}
-.paginas_{
-    display: flex;
-    justify-content: flex-end;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-.line_70{
-line-height: 70px;
-margin-left: 10px;
-margin-right: 10px;
-}
-h1{float: left;
-line-height: 70px;}
 
+.nav-link 
+{color: white;
+font-size: 1.8em;}
+.navbar-brand{
+    font-size: 2em;
+    color: white;
+}
+.nav-link:hover{
+    color:rgb(86, 200, 235)
+    
+}
+.navbar-brand:hover{
+    color:rgb(255, 255, 255)
+    
+}
 /*Index PAGINA DE CARDS CON GRID*/
 .section_con_cards{
     display: grid;
-    height: 1800px;
+    height: 100%;
     width: 100vw;
     background-color: white;
     grid-template-columns: auto auto auto ;
     justify-content: center;
+    margin-top: 0px;
+    padding: 5px;
 }
 .card{
     
     width: 300px;
     height: 550px;
-    margin-top: 30px;
+    margin-top: 20px;
     border-radius: 6px;
     overflow: hidden;
     background-color: brown; 
@@ -351,21 +357,25 @@ a:hover {
 /* TABLET  Responsive */
 @media screen and (min-width: 768px) and (max-width: 1023px)
 {
-
+.boton{display: none;}
     header{
         background-color: aqua;
         width: 100%;
         margin-top: 0px ;
-        height: 140px;
+        
       
     }
     .grid_header{
         background-color: black;
         height: 140px;
         grid-template-columns: auto ;
-        grid-template-rows: auto auto ;
+        grid-template-rows: 70px 70px ;
         justify-content: center; 
     }
+    .logo_h1{
+        grid-area: auto auto;
+    }
+
     .logo_h1{
         margin: auto;
     }
@@ -375,8 +385,10 @@ a:hover {
     .section_con_cards{
         grid-template-columns: auto auto;
         grid-template-rows: auto auto auto auto;
-        height: 3000px;
+        margin-top: 5px;
+        padding: 5%;
     }
+    .card{margin-top: 5px;}
     .grid_layout_1{
         width: 80%;
         grid-template-columns: auto;
@@ -415,7 +427,7 @@ a:hover {
     header{
         background-color: black;
         width: 100%;
-        height: 140px;
+        height: 100% ;
         margin-top: 0px ;
         display: grid;
     }

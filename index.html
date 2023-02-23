@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,51 +20,46 @@
 </head>
 <body>
 <header>   
-    <nav>
-        <div class="grid_header">
-            <div class="logo_h1">
-            <a href="">
-                <img src="imagenes/jabu,jpg.jpg" class="logo" alt="">
-            </a>
-            <a href="">
-                <h1>Mansion del futbol</h1>
-            </a>
-            </div>
-            <div class="paginas_">
-            <a class="line_70" href="paginas/pelotas.html">
-                <button>
-                    <span class="box">
-                    Pelotas
-                    </span>
-                </button></a>
-            <a class="line_70" href="paginas/botines.html">
-                <button>
-                    <span class="box">
-                    botines
-                    </span>
-                </button></a>
-            <a class="line_70" href="paginas/camperas.html">
-                <button>
-                    <span class="box">
-                    camperas
-                    </span>
-                </button></a>
-            <a class="line_70" href="paginas/remeras.html">
-                <button>
-                <span class="box">
-                remeras
-                </span>
-            </button></a>
-            <a class="line_70" href="paginas/contacto.html">
-                <button>
-                    <span class="box">
-                    contacto
-                    </span>
-                </button></a>
-
-            </div>
+    <nav class="navbar navbar-expand-lg bg-black">
+        <div class="container-fluid">
+            <img src="imagenes/jabu,jpg.jpg" class="logo" alt="">
+          <a class="navbar-brand" href="#"><button>
+            Mansion del Futbol
+        </button></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span><img src="imagenes/jabu,jpg.jpg" class="logo_2" alt=""></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#"><button>
+                  Pelotas
+              </button></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./paginas/remeras.html"><button>
+                  remeras
+              </button></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./paginas/botines.html"><button>
+                  Botines
+              </button></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./paginas/camperas.html"><button>
+                  Camperas
+              </button></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./paginas/contacto.html"><button>
+                  Contacto
+              </button></a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </nav>
+      </nav>
 </header>
     <!-- aca van las cards con articulos mas relevantes-->
 <main>
@@ -153,15 +148,34 @@
     </section>
 </main>
 <footer class="grid_footer_">
-    <div class="caja_footer">
-        <p>Copyright 2023 © Mansion del Futbol</p>
-    </div>
-    <div class="caja_footer C_footer_1">
-        <span><a href="https://plataforma.coderhouse.com/cursos/51270/desarrollo-web-online">Poductor</a></span>
-        <span><a href="https://www.instagram.com/coderhouse/?hl=es">instagram</a></span>
-        <span><a href="https://web.whatsapp.com/">whatsAPP</a></span>
-        <span><a href="https://www.google.com/?hl=es">Preguntas Frecuentes</a></span>
-    </div>
+    <nav class="navbar navbar-expand-lg bg-black">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <a class="btn" href="#">Mansion</a></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#">Pelotas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">remeras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">camperas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">botines</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 </footer>
 <script src="https://cdn.j
 sdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
