@@ -348,10 +348,7 @@ align-items: center;
 a:hover {
     color: #85929E;
 }
-.C_footer_1{
-    display: flex;
-    justify-content: space-around;
-}
+
 
 .grid_footer__{
     display: grid;
@@ -360,15 +357,22 @@ a:hover {
     background-color: black;
     color:white;
     grid-template-columns: auto auto auto;
+    padding: 5px;
+
 }
 .copyright{
-    font-size: 2em;
+    font-size: 2rem;
 }
 .redes{
-    font-size: 2em;
+    font-size: 1rem;
+    
 }
 .otros{
-    font-size: 2em;
+    font-size: 2rem;
+}
+
+.Tarjetas_logo{
+    height: 5rem;
 }
 /* TABLET  Responsive */
 @media screen and (min-width: 768px) and (max-width: 1023px)
@@ -434,6 +438,10 @@ a:hover {
     .grid_footer__{
         grid-template-columns: auto;
     }
+    .copyright , .redes ,.otros{
+        display: flex;
+        justify-content: space-evenly;
+    }
 
 }
 
@@ -442,9 +450,7 @@ a:hover {
         background-color: green;
     }
     /*boton de las paginas*/
-    .box{
-        height: 65px;
-    }
+   
     header{
         background-color: black;
         width: 100%;
@@ -507,4 +513,32 @@ a:hover {
         }
         .c3{
             grid-column: 1/3;}
+
+            .copyright , .redes ,.otros{
+                display: flex;
+                
+            }
+            .grid_footer__{
+                grid-template-columns: auto;
+            }
+            .redes{display: flex;
+            flex-direction: column;}
+
+            .otros{display: flex;
+                justify-content: center;
+            }
+            .copyright{
+                display: flex;
+                justify-content: center;
+            }
+
+.botines_card{
+    display: flex;
+    flex-direction: column;
+}
+.botines_section{
+    display: flex;
+}
+
+        
 }
