@@ -1,0 +1,63 @@
+/*botines Pagina*/
+.botines_section{
+
+    width: 90vw;
+    height: 100%;
+    background-color: white;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    
+                         .botines_card{
+     
+                            width: 80vw;
+                            height: 300px;
+                            background-color: beige;
+                            border-radius: 20px;
+                            border: 2px solid black;
+                            margin-top: 10px;
+                            padding: 7px;
+                            margin: auto;
+                                             .botines_img{
+                                                background-color: blueviolet;
+                                                height: 300px;
+                                                width: 20vw;
+                                                float: left;  
+                                                .img_botines {
+                                                    width: 100%;
+                                                    height: 100%;
+                                                   overflow: hidden;}
+                                                               
+                                                    
+                                            }
+                                            .botines_descripcion{
+                                                                   
+                                                                  
+                                                background-color: beige;
+                                                height: 300px;
+                                                width: 100%;
+                                                font-size: 1.5rem;
+                                                transition: all 1s;
+                                                
+                                                &:hover{
+                                                 background-color: rgb(157, 157, 79);
+
+                                             } 
+                                             .titulo_card{
+                                                overflow: hidden;
+                                             }
+                                             .card_descripcion{
+                                                overflow: hidden;
+                                             }
+                                            }
+                          
+                           
+                            
+                        
+                        }
+    
+    }
+
+    

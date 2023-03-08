@@ -1,0 +1,25 @@
+/*index html */
+
+.section_con_cards{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    .presentacion_index{
+        display: grid;
+        grid-template-columns: auto auto;
+        .imagen_presentacion{
+            width: 50vh;
+            height: 60rem;
+                         .estilo_imagen{
+                            height: 20rem;
+                         }
+
+        }
+        .texto_index_presentacion{
+            width: 50vh;
+            height: 60rem;
+
+        }
+    }
+}
+  
+ 
